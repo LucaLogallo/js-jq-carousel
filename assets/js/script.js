@@ -12,12 +12,16 @@ $(function(){
   var numImg = $('.wrapper .box-img').children().length;
 
   console.log(numImg);
+  
+  var pallino = $('.far.fa-circle');
 
-  for(var i = 0; i < numImg ; i++){
-    $('far fa-circle').clone().appendTo('i far fa-circle');
-  }
-  $('far fa-circle').first().addClass('active');
-  console.log($('far fa-circle').first().addClass('active'));
+  for(var i = 0; i < numImg-1 ; i++){
+    pallino.clone().appendTo('.wrapper .box-img-index');
+    console.log($('.far.fa-circle'));
+  };
+
+  $('.far.fa-circle').first().addClass('active');
+  console.log($('.far.fa-circle').first().addClass('active'));
   /* /bonus */
 
 

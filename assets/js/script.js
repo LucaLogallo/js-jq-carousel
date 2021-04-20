@@ -6,6 +6,21 @@ $(function(){
   
   var imgScrollLeft = $('.wrapper .fas.fa-angle-left');
 
+
+  /* bonus */
+  console.log($('.wrapper .box-img').children());
+  var numImg = $('.wrapper .box-img').children().length;
+
+  console.log(numImg);
+
+  for(var i = 0; i < numImg ; i++){
+    $('far fa-circle').clone().appendTo('i far fa-circle');
+  }
+  $('far fa-circle').first().addClass('active');
+  console.log($('far fa-circle').first().addClass('active'));
+  /* /bonus */
+
+
   imgScrollRight.click(nextImg);//richiamo funzione che passa a immagine successiva
   imgScrollLeft.click(prevImg);//richiamo funzione che passa a immagine precedente
 
@@ -54,5 +69,7 @@ $(function(){
 
 
   /* bonus */
+
+  
 })
 
